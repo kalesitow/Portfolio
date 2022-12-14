@@ -1,0 +1,36 @@
+/*CSS general de elementos*/
+html{
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    background-color: #fff ;
+    color: black;
+}
+h1{
+    text-align: left;
+    margin: 0;
+    color: #F9BF60;
+    /*color: #E0915C; este color cuando este*/
+ }
+ /*CSS IDs y Clases*/
+#head{
+    padding: 1px 10px;
+    background-color:#1D1D1D;
+    color: #fff;
+    text-align: center;
+}
+.peque{
+    font-size: 12px;
+    margin-right: 285px;
+    margin-bottom: 0;
+    color: #F9BF60;
+}
+.grand{
+    color: #E0915C;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.med{
+    margin-top: 5px;
+}
