@@ -1,36 +1,74 @@
 /*CSS general de elementos*/
-html{
+*{
     font-family: 'Quicksand', sans-serif;
+    margin: 0px;
 }
+
 body{
     background-color: #fff ;
     color: black;
 }
 h1{
-    text-align: left;
     margin: 0;
-    color: #F9BF60;
+    color: #E0915C;
     /*color: #E0915C; este color cuando este*/
  }
  /*CSS IDs y Clases*/
-#head{
-    padding: 1px 10px;
-    background-color:#1D1D1D;
-    color: #fff;
+#inicio{
+    padding-left: 10px;
+    padding-bottom: 20px;
+    background-color:#fff;
+    color: #000;
     text-align: center;
+    border-bottom: 1px solid #000;
+}
+#aboutme{
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 20px;
+}
+#contact{
+    background-color: #E0915C;
+}
+#start{
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0px;
+}
+#chooseme{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.boton{
+    margin: 30px 775px 0px 775px;
+    padding: 10px 0px;
+    background-color: #fff;
+    color: #000;
+}
+.aboutme{
+    padding-top: 11px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 .peque{
     font-size: 12px;
-    margin-right: 285px;
-    margin-bottom: 0;
-    color: #F9BF60;
+    padding-right: 315px;
+    margin: 0;
+    /*color: #F9BF60;*/
+    line-height: 0; /*tamaño del espaciado de la linea del texto*/
 }
 .grand{
-    color: #E0915C;
+    color: #F9BF60;
     font-size: 50px;
     margin-top: 0;
     margin-bottom: 0;
+    line-height: 60px;
 }
 .med{
     margin-top: 5px;
+}
+h1,h2,h3{
+    font-family: 'Poppins', sans-serif;
 }
