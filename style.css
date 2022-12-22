@@ -8,12 +8,6 @@ body{
     background-color: #fff ;
     color: black;
 }
-h1{
-    margin: 0;
-    color: #E0915C;
-    /*color: #E0915C; este color cuando este*/
- }
- /*CSS IDs y Clases*/
 #inicio{
     padding-left: 10px;
     padding-bottom: 20px;
@@ -25,7 +19,8 @@ h1{
 #aboutme{
     margin-left: 100px;
     margin-right: 100px;
-    padding-bottom: 20px;
+    padding-bottom: 75px;
+    overflow: hidden;
 }
 #contact{
     background-color: #E0915C;
@@ -34,12 +29,19 @@ h1{
     text-align: center;
     background-color: #000;
     color: #fff;
-    padding: 50px 0px;
+    padding: 75px 0px;
 }
 #chooseme{
     margin-top: 100px;
     text-align: center;
 }
+
+h1{
+    margin: 0;
+    color: #E0915C;
+    text-align: left;
+    /*color: #E0915C; este color cuando este*/
+ }
 
 .boton{
     margin: 30px 775px 0px 775px;
@@ -48,7 +50,7 @@ h1{
     color: #000;
 }
 .aboutme{
-    padding-top: 11px;
+    padding-top: 25px;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
@@ -71,4 +73,27 @@ h1{
 }
 h1,h2,h3{
     font-family: 'Poppins', sans-serif;
+}
+.img{
+    float: left;
+    margin-right: 100px;
+}
+p{
+    margin-bottom: 25px;
+    
+}
+.space{
+    padding-top: 100px;
+}
+.listaT{
+    display: inline-block;
+    margin-right: 162px;
+    margin-left: 20px;
+}
+.lista{
+    display: inline-block;
+    margin-right: 108px;
+}
+i{
+    font-size: 24px;
 }
