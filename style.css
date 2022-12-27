@@ -119,34 +119,25 @@ i{
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
-/**/
-.disp{
+.img-text{
     display:flex ;
+    flex-wrap: wrap;
+    padding-top: 100px;  
 }
 #img{
     margin-right: 100px;
-    border-radius: 50%;
+    border-radius: 50%; 
 }
 #img:hover{
     filter: brightness(75%);
 }
-#inline{
-    display: inline-block;
-    vertical-align: top;
+#text{
+    width: 500px;
+    padding-top: 50px;
 }
-/*.img-text{
+/*.skill-tittle{
     display: flex;
-    flex-wrap: wrap;
-
-.img-text p{
-    display: inline-block;
-    padding-top: 100px;
-}
-
-.skill-tittle{
-    display: flex;
-}
-*/
+}*/
 .lista{
     display: flex;
     flex-wrap: wrap;
