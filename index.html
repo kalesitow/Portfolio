@@ -11,63 +11,81 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="inicio">
-        <h1>Portfolio</h1>
-        <p class="peque">Hi, my name is</p>
-        <h2 class="grand">Kevin Rodriguez</h2>
-        <p class="med">Soy ingeniero de sistemas especializado en diseño y <br> desarrollo de software. Suelo centrarme en el área web pero puedo trabajar <br> 
-            en diferentes áreas y lenguajes.</p>
-            <div><i class="fa-brands fa-twitter"></i></div>
-        <p class="a"><strong>v</strong></p>
-    </div>
-    <div id="aboutme">
-        <h2 class="aboutme">About me</h2>  
-            <img class="img" src="./img/placebo.jpg" alt="Foto Kevin Rodriguez" >
-            <p class="space">Mi nombre es kevin, soy un chico apasionado por el mundo digital que está aprendiendo cada día más sobre este nicho, soy una persona 
+    <!--Menu de navegacion-->
+    <nav></nav>
+    <article>
+        <!--Bloque de inicio-->
+        <section class="back">
+            <div id="inicio" class="front">
+                <h1>Portfolio</h1>
+                <p id="peque">Hi, my name is</p>
+                <h2 id="grand">Kevin Rodriguez</h2>
+                <p id="med">Soy ingeniero de sistemas especializado en diseño y <br> desarrollo de software. Suelo centrarme en el área web pero puedo trabajar <br> 
+                en diferentes áreas y lenguajes.</p>
+                <ul id="redes">
+                    <li><a href="https://www.youtube.com/watch?v=rIZ3wTzyM4I" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://www.youtube.com/watch?v=rIZ3wTzyM4I" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/watch?v=rIZ3wTzyM4I" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.youtube.com/watch?v=rIZ3wTzyM4I" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+                <div class="contenedor">
+                    <p class="lm"><strong>leer mas</strong></p>
+                    <p class="v"><strong>v</strong></p>
+                </div>
+            </div>
+        </section>
+        <!--Bloque sobre mi-->
+        <section id="aboutme">
+            <div class="disp">
+                <img id="img" src="./img/About_me.jpg" alt="Foto Kevin Rodriguez" > 
+                <p id="inline">Soy un chico apasionado por el mundo digital que está aprendiendo cada día más sobre este nicho, soy una persona 
                 enamorado de la productividad, no me gusta perder el tiempo y si me necesitas seguramente estare estudiando, leyendo o en algun proyecto 
                 sin embargo no tendré ningún problema en responderte, <strong>escribeme cualquier cosa</strong>!</p>
-        <p>Aquí encontrará mis principales tecnologías y algunas otras con las que he trabajado:</p>
-        <div>
-            <p class="listaT">Skills</p>
-            <p class="listaT">Others</p>
-            <p class="listaT">Areas</p>
+            </div>
+                <!--<p class="skill-tittle">Aquí encontrará mis principales tecnologías y algunas otras con las que he trabajado:</p>-->
+            <!--<div class="lista">
+                <ul>    
+                    <p>Skills</p>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>javascript</li>
+                    <li>c++</li>
+                    <li>java</li>
+                    <li>python</li>
+                </ul>
+                <ul>
+                    <p>Others</p>
+                    <li>TypeScript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Mongodb</li>
+                    <li>My sql</li>
+                </ul>
+                <ul>
+                    <p>Areas</p>
+                    <li>Backend</li>
+                    <li>Frontend</li>
+                    <li>UX/UI design</li>
+                    <li>Graphic design</li>
+                </ul>
+            </div>-->
+        </section>
+        <!--Separador start-->
+        <div id="start">
+            <p>Te gusta mi trabajo?</p>
+            <p class="boton">Start Project</p>
         </div>
-        <ul class="lista">    
-            <li>html</li>
-            <li>css</li>
-            <li>javascript</li>
-            <li>c++</li>
-            <li>java</li>
-            <li>python</li>
-        </ul>
-        <ul class="lista">
-            <li>WordPress</li>
-            <li>TypeScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>Mongodb</li>
-            <li>My sql</li>
-        </ul>
-        <ul class="lista">
-            <li>Backend</li>
-            <li>Frontend</li>
-            <li>UX/UI design</li>
-            <li>Graphic design</li>
-            <li></li>
-            <li></li>
-        </ul>
-
-    </div>
-    <div id="start">
-        <p>Te gusta mi trabajo?</p>
-        <p class="boton">Start Project</p>
-    </div>
-    <div id="chooseme">
-        <h2>Why choose me?</h2>
-        <img src="./img/Delete-this.jpg" alt="Delete-this">
-    </div>
-    <div id="contact">
-        <p>Contact me</p>
-    </div>
+        <!--Bloque escojeme-->
+        <section id="chooseme">
+            <h2>Why choose me?</h2>
+            <img src="./img/Delete-this.jpg" alt="Delete-this">
+        </section>
+        <!--Bloque contactame-->
+        <div id="contact">
+            <p>Contact me</p>
+        </div>
+    </article>
+    <!--Footer-->
+    <footer></footer>
 </body>
 </html>

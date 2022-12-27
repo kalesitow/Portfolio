@@ -1,30 +1,161 @@
 /*CSS general de elementos*/
 *{
     font-family: 'Quicksand', sans-serif;
-    margin: 0px;
+    padding: 0;
+    margin: 0;    
 }
-
+a:any-link{
+    color: #fff;
+}
 body{
     background-color: #fff ;
     color: black;
 }
+h1,h2,h3{
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    margin: 0;
+    color: #FF5D6C;
+    text-align: left;
+    padding-bottom: 15px;
+    font-size: 30px;
+    /*color: #E0915C; este color cuando este*/
+ }
+p{
+    margin-bottom: 25px;
+    
+}
+i{
+    font-size: 24px;
+}
+
+/* INICIO */
+.back{
+    background-image: url(/img/Header.jpg);
+    min-height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.back::before{
+    position: absolute;
+    content:"";
+    inset: 0;
+    background-color: rgba(0,0,0,0.33);
+}
+.front{
+    position:relative;
+}
 #inicio{
     padding-left: 10px;
-    padding-bottom: 20px;
-    background-color:#fff;
-    color: #000;
+    padding-bottom: 40px;
+    color: #fff;
     text-align: center;
-    border-bottom: 1px solid #000;
 }
+#peque{
+    font-size: 12px;
+    padding-right: 315px;
+    margin: 0;
+    /*color: #F9BF60;*/
+    line-height: 0; /*tamaño del espaciado de la linea del texto*/
+}
+#grand{
+    color: #FF5D6C;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 0px;
+    line-height: 60px;
+}
+#med{
+    margin-top: 5px;
+}
+#redes li{
+    padding: 0;
+    text-align: center;
+    list-style: none;
+    /*overflow: hidden;*/
+}
+#redes>li{
+    display: inline-block;
+    margin: 0 12px;
+    margin-bottom: 25px;
+}
+#redes>li>a:hover{
+    cursor: pointer;
+    color: #FF5D6C;
+}
+.contenedor{
+    margin: 0 48% 0 ;
+}
+.v, .lm{
+    text-align: center;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    color: #FF5D6C;
+}
+.contenedor:hover{
+    margin: 0;
+    transition: all 300ms;
+    cursor: default;
+    min-height: 450px;
+}
+.contenedor:hover .v{
+    transition: all 300ms;
+    transform: translatey(400px);
+}
+
+/* ABOUT ME */
 #aboutme{
+    margin-top: 75px;
     margin-left: 100px;
     margin-right: 100px;
     padding-bottom: 75px;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
-#contact{
-    background-color: #E0915C;
+.aboutme{
+    padding-top: 25px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
+/**/
+.disp{
+    display:flex ;
+}
+#img{
+    margin-right: 100px;
+    border-radius: 50%;
+}
+#img:hover{
+    filter: brightness(75%);
+}
+#inline{
+    display: inline-block;
+    vertical-align: top;
+}
+/*.img-text{
+    display: flex;
+    flex-wrap: wrap;
+
+.img-text p{
+    display: inline-block;
+    padding-top: 100px;
+}
+
+.skill-tittle{
+    display: flex;
+}
+*/
+.lista{
+    display: flex;
+    flex-wrap: wrap;
+}
+.lista ul{
+    display: inline-block;
+    margin-right: 108px;
+}
+/* START */
 #start{
     text-align: center;
     background-color: #000;
@@ -35,65 +166,18 @@ body{
     margin-top: 100px;
     text-align: center;
 }
-
-h1{
-    margin: 0;
-    color: #E0915C;
-    text-align: left;
-    /*color: #E0915C; este color cuando este*/
- }
-
 .boton{
     margin: 30px 775px 0px 775px;
     padding: 10px 0px;
     background-color: #fff;
     color: #000;
 }
-.aboutme{
-    padding-top: 25px;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+.boton:hover{
+    cursor: pointer;
+    background-color: #FF5D6C;
 }
-.peque{
-    font-size: 12px;
-    padding-right: 315px;
-    margin: 0;
-    /*color: #F9BF60;*/
-    line-height: 0; /*tamaño del espaciado de la linea del texto*/
+/* CONTACT ME */
+#contact{
+    color: #000;
 }
-.grand{
-    color: #F9BF60;
-    font-size: 50px;
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 60px;
-}
-.med{
-    margin-top: 5px;
-}
-h1,h2,h3{
-    font-family: 'Poppins', sans-serif;
-}
-.img{
-    float: left;
-    margin-right: 100px;
-}
-p{
-    margin-bottom: 25px;
-    
-}
-.space{
-    padding-top: 100px;
-}
-.listaT{
-    display: inline-block;
-    margin-right: 162px;
-    margin-left: 20px;
-}
-.lista{
-    display: inline-block;
-    margin-right: 108px;
-}
-i{
-    font-size: 24px;
-}
+/* OTHER */
