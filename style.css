@@ -108,16 +108,10 @@ i{
 
 /* ABOUT ME */
 #aboutme{
-    margin-top: 75px;
-    margin-left: 100px;
-    margin-right: 100px;
-    padding-bottom: 75px;
+    margin: 75px 100px;
+    display: flex;
+    flex-wrap: wrap;
     /*overflow: hidden;*/
-}
-.aboutme{
-    padding-top: 25px;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
 }
 .img-text{
     display:flex ;
@@ -125,21 +119,28 @@ i{
     padding-top: 100px;  
 }
 #img{
-    margin-right: 100px;
     border-radius: 50%; 
 }
 #img:hover{
     filter: brightness(75%);
 }
 #text{
-    width: 500px;
+    /*margin: 0px auto;*/
+    width: 600px;
+    height: 100px;
     padding-top: 50px;
+    display: block;
 }
 /*.skill-tittle{
     display: flex;
 }*/
+.img-text ul{
+    display: inline-block;
+    margin-right: 108px;
+}
+/**/
 .lista{
-    display: flex;
+    display: inline-block;
     flex-wrap: wrap;
 }
 .lista ul{
