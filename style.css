@@ -14,28 +14,42 @@ body{
 h1,h2,h3{
     font-family: 'Poppins', sans-serif;
 }
-h1{
-    margin: 0;
-    color: #FF5D6C;
-    text-align: left;
-    padding-bottom: 15px;
-    font-size: 30px;
-    /*color: #E0915C; este color cuando este*/
- }
 p{
     margin-bottom: 25px;
-    
 }
 i{
     font-size: 24px;
 }
-
-/* INICIO */
-.back{
+header{
     background-image: url(/img/Header.jpg);
     min-height: 300px;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* NAV */
+nav{
+    background-color: rgba(0,0,0,0.33);
+    color: #fff;
+    display: flex;
+}
+h1{
+    margin: 0 0 0 10px;
+    color: #FF5D6C;
+    text-align: left;
+    font-size: 30px;
+    /*color: #E0915C; este color cuando este*/
+ }
+nav ul{
+    list-style: none;
+    display: inline-block;
+}
+nav il{
+    float: left;
+}
+
+/* INICIO */
+.back{
     position: relative;
 }
 .back::before{
@@ -110,37 +124,47 @@ i{
 #aboutme{
     display: flex;
     flex-wrap: wrap;
-    margin: 75px 0px; 
+    margin: 50px 0px; 
     align-items: center;
-    /*overflow: hidden;*/
+    justify-content: center;
 }
 #img{
+    max-width: 100%;
+    min-width: 0%;
     border-radius: 50%; 
-    margin: 0 0 15px 50px;
+    margin: 0 40px 15px 50px;
 }
 #img:hover{
     filter: brightness(75%);
 }
 #text{
-    width: 600px;
-    margin: 0 0 0 70px;
-    padding-bottom: 10px;
+    width: fit-content;
+    max-width: 600px;
+    padding: 0 0 10px 10px;
     border-bottom: solid 1px #FF5D6C;
 }
-/*.skill-tittle{
-    display: flex;
-}*/
-#aboutme ul{
-    margin: 0 0 0 101px;
+.sisa{
+    justify-content: center;
+}
+.skill-tittle{
+    text-align: center;
+}
+.ul_special{
+    width: 29vw;
+    max-width: 200px;
+}
+.ul_only{
+    margin-left: 7px;
 }
 .lista{
-    margin-top: 20px;
+    margin: 20px 0 0 19px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .lista ul{
     display: inline-block;
-    margin-right: 108px;
+    padding-bottom: 50px;
 }
 /* START */
 #start{
@@ -150,7 +174,8 @@ i{
     padding: 75px 0px;
 }
 .boton{
-    margin: 30px 46% 0;
+    margin: 30px auto;
+    width: 120px;
     padding: 10px 0px;
     background-color: #fff;
     color: #000;
@@ -159,6 +184,7 @@ i{
     cursor: pointer;
     background-color: #FF5D6C;
 }
+
 /* CHOOSEME */
 #chooseme{
     margin-top: 100px;
@@ -167,19 +193,11 @@ i{
 .tabla{
     margin-top: 50px;
     color: #FF5D6C;
-    display: flex;
-    justify-content: center;
-}
-.tabla tr{
-    display: flex;
+    width: 100%;
 }
 .table_space td{
     padding: 25px 0 100px;
     color: #000;
-
-}
-.tabla td{
-    width: 500px;
 }
 .negrilla{
     color: #000;
@@ -188,4 +206,5 @@ i{
 #contact{
     color: #000;
 }
+
 /* OTHER */

@@ -16,63 +16,73 @@
 </head>
 <body>
     <!--Menu de navegacion-->
-    <nav></nav>
-    <article>
-        <!--Bloque de inicio-->
-        <section class="back">
-            <div id="inicio" class="front">
-                <h1>Portfolio</h1>
-                <p id="peque">Hi, my name is</p>
-                <h2 id="grand">Kevin Rodriguez</h2>
-                <p id="med">Soy ingeniero de sistemas especializado en diseño y <br> desarrollo de software. Suelo centrarme en el área web pero puedo trabajar <br> 
-                en diferentes áreas y lenguajes.</p>
-                <ul id="redes">
-                    <li><a href="https://www.youtube.com/watch?v=rIZ3wTzyM4I" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="https://www.youtube.com/watch?v=rIZ3wTzyM4I" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="https://www.youtube.com/watch?v=rIZ3wTzyM4I" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="https://www.youtube.com/watch?v=rIZ3wTzyM4I" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-                </ul>
-                <div class="contenedor">
-                    <p class="lm"><strong>leer mas</strong></p>
-                    <p class="v"><strong>v</strong></p>
+    <header>
+        <nav>
+            <h1>Portfolio</h1>
+            <ul>
+                <li>Sobre mi</li>
+                <li>Mis proyectos</li>
+                <li>Otros</li>
+                <li>Contactar</li>
+                <li>Mas</li>
+            </ul>
+        </nav>
+        <article>
+            <!--Bloque de inicio-->
+            <section class="back">
+                <div id="inicio" class="front">
+                    <p id="peque">Hi, my name is</p>
+                    <h2 id="grand">Kevin Rodriguez</h2>
+                    <p id="med">Soy ingeniero de sistemas especializado en diseño y <br> desarrollo de software. Suelo centrarme en el área web pero puedo trabajar <br> 
+                    en diferentes áreas y lenguajes.</p>
+                    <ul id="redes">
+                        <li><a href="https://www.youtube.com/watch?v=rIZ3wTzyM4I" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://www.youtube.com/watch?v=rIZ3wTzyM4I" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/watch?v=rIZ3wTzyM4I" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://www.youtube.com/watch?v=rIZ3wTzyM4I" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                    <div class="contenedor">
+                        <p class="lm"><strong>leer mas</strong></p>
+                        <p class="v"><strong>v</strong></p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </header>
         <!--Bloque sobre mi-->
         <section id="aboutme">
             <img id="img" src="./img/About_me.jpg" alt="Foto Kevin Rodriguez" > 
-            <div>    
+            <div class="sisa">    
                 <p id="text">Soy un chico apasionado por el mundo digital que está aprendiendo cada día más sobre este nicho, soy una persona 
                 enamorado de la productividad, no me gusta perder el tiempo y si me necesitas seguramente estare estudiando, leyendo o en algun proyecto 
                 sin embargo no tendré ningún problema en responderte, <strong>escribeme cualquier cosa</strong>!</p>
-                <!--<p class="skill-tittle">Aquí encontrará mis principales tecnologías y algunas otras con las que he trabajado:</p>-->
-            <div class="lista">
-                <ul>    
-                    <p>Skills</p>
-                    <li>html</li>
-                    <li>css</li>
-                    <li>javascript</li>
-                    <li>c++</li>
-                    <li>java</li>
-                    <li>python</li>
-                </ul>
-                <ul>
-                    <p>Others</p>
-                    <li>TypeScript</li>
-                    <li>React</li>
-                    <li>Node.js</li>
-                    <li>Mongodb</li>
-                    <li>My sql</li>
-                </ul>
-                <ul>
-                    <p>Areas</p>
-                    <li>Backend</li>
-                    <li>Frontend</li>
-                    <li>UX/UI design</li>
-                    <li>Graphic design</li>
-                </ul>
+                <p class="skill-tittle">Aquí encontrará mis principales tecnologías y algunas otras con las que he trabajado:</p>
+                <div class="lista">
+                    <ul class="ul_special">    
+                        <p>Skills</p>
+                        <li>html</li>
+                        <li>css</li>
+                        <li>javascript</li>
+                        <li>c++</li>
+                        <li>java</li>
+                        <li>python</li>
+                    </ul>
+                    <ul class="ul_special">
+                        <p>Others</p>
+                        <li>TypeScript</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>Mongodb</li>
+                        <li>My sql</li>
+                    </ul>
+                    <ul class="ul_only">
+                        <p>Areas</p>
+                        <li>Backend</li>
+                        <li>Frontend</li>
+                        <li>UX/UI design</li>
+                        <li>Graphic design</li>
+                    </ul>
+                </div>
             </div>
-        </div>
         </section>
         <!--Separador start-->
         <div id="start">
@@ -115,7 +125,6 @@
                 </tr>
             </table>
         </section>
-        <img src="./img/Delete-this.jpg" alt="Delete-this" style="border-top: solid 1px #000;">
         <!--Bloque contactame-->
         <div id="contact">
             <p>Contact me</p>
