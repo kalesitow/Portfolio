@@ -108,39 +108,34 @@ i{
 
 /* ABOUT ME */
 #aboutme{
-    margin: 75px 100px;
     display: flex;
     flex-wrap: wrap;
+    margin: 75px 0px; 
+    align-items: center;
     /*overflow: hidden;*/
-}
-.img-text{
-    display:flex ;
-    flex-wrap: wrap;
-    padding-top: 100px;  
 }
 #img{
     border-radius: 50%; 
+    margin: 0 0 15px 50px;
 }
 #img:hover{
     filter: brightness(75%);
 }
 #text{
-    /*margin: 0px auto;*/
     width: 600px;
-    height: 100px;
-    padding-top: 50px;
-    display: block;
+    margin: 0 0 0 70px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #FF5D6C;
 }
 /*.skill-tittle{
     display: flex;
 }*/
-.img-text ul{
-    display: inline-block;
-    margin-right: 108px;
+#aboutme ul{
+    margin: 0 0 0 101px;
 }
-/**/
 .lista{
-    display: inline-block;
+    margin-top: 20px;
+    display: flex;
     flex-wrap: wrap;
 }
 .lista ul{
@@ -154,12 +149,8 @@ i{
     color: #fff;
     padding: 75px 0px;
 }
-#chooseme{
-    margin-top: 100px;
-    text-align: center;
-}
 .boton{
-    margin: 30px 775px 0px 775px;
+    margin: 30px 46% 0;
     padding: 10px 0px;
     background-color: #fff;
     color: #000;
@@ -167,6 +158,31 @@ i{
 .boton:hover{
     cursor: pointer;
     background-color: #FF5D6C;
+}
+/* CHOOSEME */
+#chooseme{
+    margin-top: 100px;
+    text-align: center;
+}
+.tabla{
+    margin-top: 50px;
+    color: #FF5D6C;
+    display: flex;
+    justify-content: center;
+}
+.tabla tr{
+    display: flex;
+}
+.table_space td{
+    padding: 25px 0 100px;
+    color: #000;
+
+}
+.tabla td{
+    width: 500px;
+}
+.negrilla{
+    color: #000;
 }
 /* CONTACT ME */
 #contact{
