@@ -29,25 +29,31 @@ header{
 
 /* NAV */
 nav{
-    background-color: rgba(0,0,0,0.33);
-    color: #fff;
     display: flex;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.33);
+    padding: 0 10px 25px 10px;
+    align-items: center;
+
 }
 h1{
-    margin: 0 0 0 10px;
     color: #FF5D6C;
-    text-align: left;
     font-size: 30px;
-    /*color: #E0915C; este color cuando este*/
  }
-nav ul{
+nav li{
     list-style: none;
-    display: inline-block;
-}
-nav il{
     float: left;
 }
-
+nav li a{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: all 0.1s linear; /*efecto nav*/
+    /*border-radius: 5px;   Efecto redondo al cuadrado*/
+}
+nav li a:hover{
+    cursor: pointer;
+    background-color: #FF5D6C;
+}
 /* INICIO */
 .back{
     position: relative;
@@ -202,9 +208,21 @@ nav il{
 .negrilla{
     color: #000;
 }
+
 /* CONTACT ME */
 #contact{
     color: #000;
+    text-align: center;
+    padding-top: 25px;
+    border-top: solid 1px #000;
 }
 
 /* OTHER */
+
+/* FOOTER */
+footer{
+    background-color: #f2f2f2;
+    padding: 5rem 0 3rem;
+    text-align: center;
+    margin-top: 6rem;
+}
