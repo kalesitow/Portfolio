@@ -4,9 +4,9 @@
     padding: 0;
     margin: 0;    
 }
-a:any-link{
+/**a:any-link{
     color: #fff;
-}
+}**/
 body{
     background-color: #fff ;
     color: black;
@@ -20,21 +20,21 @@ p{
 i{
     font-size: 24px;
 }
-header{
-    background-image: url(/img/Header.jpg);
-    min-height: 300px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 /* NAV */
 nav{
+    z-index: 99;
+
     display: flex;
     justify-content: space-between;
-    background-color: rgba(0,0,0,0.33);
-    padding: 0 10px 25px 10px;
+    padding: 10px 20px ;
     align-items: center;
 
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+
+    transition: 0.3s;
 }
 h1{
     color: #FF5D6C;
@@ -46,39 +46,62 @@ nav li{
 }
 nav li a{
     text-decoration: none;
+    font-size: 13px;
+
     padding: 0.5rem 1rem;
     transition: all 0.1s linear; /*efecto nav*/
     /*border-radius: 5px;   Efecto redondo al cuadrado*/
+    color: #fff;
 }
 nav li a:hover{
     cursor: pointer;
-    background-color: #FF5D6C;
+    background-color: #FF5D6C; 
+}
+.arrow{
+    padding: 16px 16px 0px;/*15*/
+}
+.abajo{
+    background-color: #fff;
+    border-bottom: solid 1px #f2f2f2;
+    padding: 5px 20px;
+    transition: 0.3s;
+    
+}
+.abajo a{
+    color: #000;
+}
+#menu{
+    display: none;
 }
 /* INICIO */
 .back{
     position: relative;
+
+    background-image: url(/img/Header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .back::before{
     position: absolute;
     content:"";
     inset: 0;
+
     background-color: rgba(0,0,0,0.33);
 }
 .front{
     position:relative;
 }
 #inicio{
-    padding-left: 10px;
-    padding-bottom: 40px;
+    padding: 70px 0 40px 10px;
     color: #fff;
     text-align: center;
 }
 #peque{
     font-size: 12px;
-    padding-right: 315px;
+    padding: 0 315px 0 0;
     margin: 0;
     /*color: #F9BF60;*/
-    line-height: 0; /*tamaño del espaciado de la linea del texto*/
+    line-height: 1; /*tamaño del espaciado de la linea del texto*/
 }
 #grand{
     color: #FF5D6C;
@@ -100,6 +123,9 @@ nav li a:hover{
     display: inline-block;
     margin: 0 12px;
     margin-bottom: 25px;
+}
+#redes li a{
+    color: #f2f2f2;
 }
 #redes>li>a:hover{
     cursor: pointer;
@@ -217,12 +243,114 @@ nav li a:hover{
     border-top: solid 1px #000;
 }
 
-/* OTHER */
-
 /* FOOTER */
 footer{
     background-color: #f2f2f2;
     padding: 5rem 0 3rem;
     text-align: center;
     margin-top: 6rem;
+}
+
+/* OTHER */
+@media only screen and (max-width: 767px) {
+
+    #menu{
+        display: block;
+    }
+    nav{
+        z-index: 99;/*sobra*/
+    
+        display: block;
+        justify-content: center;
+        padding: 0px 0px 0;
+        align-items: center;
+    
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+    
+        transition: 0s;
+    }
+    nav.show{
+        background-color: #fff;
+        border-bottom: solid 1px #f2f2f2;
+    }
+    nav.show #menu{
+        color: #000;
+    }
+    h1{
+        margin-top: 0;
+        color: #FF5D6C;
+        font-size: 20px;
+        float: left;
+        padding: 10px 0 21px 20px;
+    }
+    #menu{
+        cursor: pointer;
+        color: #fff;
+        padding: 13px 20px 10px 0;
+        text-align: right;
+    }
+    nav ul{
+        display: none;
+        margin-left: 10px;
+    }
+    nav.show ul{
+        display: block;
+    }
+    nav li{
+        list-style: none;
+        float: none; 
+        margin: 20px 0 20px 10px;
+    }
+    nav li a{
+        text-decoration: none;
+        font-size: 13px;
+    
+        padding: 0rem 0rem;
+        transition: all 0.1s linear; /*efecto nav*/
+        /*border-radius: 5px;   Efecto redondo al cuadrado*/
+        color: #000;
+    }
+    nav li a:hover{
+        cursor: pointer;
+        background-color: #FF5D6C; 
+    }
+    .arrow{
+        padding: 7px 0px 0px;/*15*/
+    }
+    .abajo{
+        background:none ;
+        padding: 0px 0px;
+        transition: none;
+        border-bottom: solid 0px #f2f2f2;
+    }
+    .abajo #menu{
+        color: #000;
+        background-color: #fff;
+        padding: 13px 20px 10px 0;
+        border-bottom: solid 1px #f2f2f2;
+    }
+    .abajo h1{
+        padding: 10px 0px 21px 20px;
+    }
+    nav.show #menu{
+        border-bottom: solid 0px #f2f2f2;
+        padding-bottom: 10px;
+    }
+    /* INICIO */
+    #inicio{
+        padding: 50px 0 40px 10px;
+        color: #fff;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 412px) {
+    #grand{
+        font-size: 40px;
+    }
+    #peque{
+        padding-right: 237px;
+    }
 }
