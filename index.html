@@ -29,7 +29,17 @@
                     <li><a class="arrow" href="#"><span id="arrow" class="material-icons">expand_less</span></a></li>
                 </ul>
             </nav>
-        <article>
+            <!--Subscribe-->
+            <div id="pushbar">
+                <span id="pb_up" class="material-icons">arrow_drop_up</span>
+                <p>SUBSCRIBE FOR MORE INFORMATION ABOUT ME AND MY PROJECTS, i won't spam you, trust me!</p>
+                <form class="formulario">
+                        <input class="inputs" type="text" placeholder="Name">
+                        <input class="inputs" type="email" placeholder="Email">
+                        <button class="inputs" type="submit">SUBSCRIBE</button>
+                </form>
+                <span id="pb_down" class="material-icons">arrow_drop_down</span>
+            </div>
             <!--Bloque de inicio-->
             <section class="back">
                 <div id="inicio" class="front">
@@ -51,10 +61,21 @@
             </section>
     </header>
     <article>
+        <!-- Warning -->
+        <div id="notice">
+            <h3>NOTICE:</h3>
+            <ul>
+                <li>Soy un desarrollador independiente y "empirico" ya que aun no he terminado mi carrera</li>
+                <li>Actualmente me encuentro en la universidad por lo que es necesario discutir los timepos y fechas</li>
+            </ul>
+        </div>
         <!--Bloque sobre mi-->
         <section id="aboutme">
-            <img id="img" src="./img/About_me.jpg" alt="Foto Kevin Rodriguez" > 
-            <div class="sisa">    
+            <div id="quote1">
+                <img id="img" src="./img/About_me.jpg" alt="Imagen Principal">
+                <p>"Every impulse of feeling should be guided by reason; and, in my opinion,<br>exertion should always be in proportion to what is required."<br>- Jane Austen.</p>
+            </div>
+            <div class="img_text">    
                 <p id="text">Soy un chico apasionado por el mundo digital que está aprendiendo cada día más sobre este nicho, soy una persona 
                 enamorado de la productividad, no me gusta perder el tiempo y si me necesitas seguramente estare estudiando, leyendo o en algun proyecto 
                 sin embargo no tendré ningún problema en responderte, <strong>escribeme cualquier cosa</strong>!</p>
@@ -149,12 +170,45 @@
         <div id="contact">
             <p>Contact me<br>Formulario</p>
         </div>
+            <!--More-->
+        <div id="more_">
+            <ul>
+                <p>Social media</p>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Facebook</li>
+                <li>Tiktok</li>
+            </ul>
+            <ul>
+                <p>converse</p>
+                <li>Discord</li>
+                <li>Twitter</li>
+                <li>Facebook</li>
+                <li>MiWeb</li>
+            </ul>
+            <ul class="contact_ul">
+                <p>contact</p>
+                <li>kdrr@gmail.com</li>
+                <li>+47 312 4452914</li>
+                <li>Telegram</li>
+                <li>MyWeb</li>
+            </ul>
+        </div>
     </article>
-    <!--More-->
-    <div id="more"></div>
     <!--Footer-->
     <footer>
-        <p>Pagina diseñada por @KevinDRR</p>
+        <span class="texto_responsive" 
+        data-desktoptext="Copyright © 2022 Kale Design // Page designed by @KevinDRR // A Proud Life Project" 
+        data-tablettext="Copyright © 2022 Kale Design // Page designed by @KevinDRR" 
+        data-phonetext="Copyright © 2022 Kale Design"></span><br>
+        <span class="texto_responsive" 
+        data-desktoptext="" 
+        data-tablettext="A Proud Life Project" 
+        data-phonetext="Page designed by @KevinDRR"></span><br>
+        <span class="texto_responsive" 
+        data-desktoptext="" 
+        data-tablettext="" 
+        data-phonetext="A Proud Life Project"></span>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
