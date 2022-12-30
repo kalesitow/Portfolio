@@ -337,7 +337,7 @@ nav.abajo{
 
 /* CHOOSEME */
 #chooseme{
-    margin-top: 100px;
+    margin-top: 90px;
     text-align: center;
 }
 .tabla{
@@ -355,6 +355,33 @@ nav.abajo{
 
 /* VIDEO */
 #video{
+    background-color: #FF5D6C;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+#video video{
+    max-width: 600px;
+    border-radius: 5px;
+    margin: 15px 50px;
+}
+
+/*GIF*/
+#gif{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+#gif video{
+    max-width: 600px;
+    border-radius: 5px;
+    margin: 15px 50px;  
+}
+
+
+/*#video{
     max-width: 1000px;
     max-height: 500px;
     border: solid 1px #000;
@@ -368,7 +395,7 @@ nav.abajo{
     border-top: 50px solid transparent;
     border-bottom: 50px solid transparent; 
     margin: 10% auto;
-}
+}*/
 
 /* CONTACT ME */
 #contact{

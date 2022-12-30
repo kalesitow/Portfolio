@@ -1,4 +1,4 @@
-/* ------ BORRAR ESTO ---- 
+/* ------ BORRAR ESTO ----*/ 
 jQuery('document').ready(function($){  
     $('#pushbar').hide();
 })
