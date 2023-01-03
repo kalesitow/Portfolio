@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="shortcut icon" href="./img/icon.png">
     <link rel="stylesheet" href="style.css">
     <!--Iconos Fontawesome-->
     <script src="https://kit.fontawesome.com/ef93b73210.js" crossorigin="anonymous"></script>
@@ -180,31 +181,38 @@
         </section>
         <!--Bloque contactame-->
         <div id="contact">
-            <p>Contact me<br>Formulario</p>
-        </div>
-            <!--More-->
-        <div id="more_">
-            <ul>
-                <p>Social media</p>
-                <li>Twitter</li>
-                <li>Instagram</li>
-                <li>Facebook</li>
-                <li>Tiktok</li>
-            </ul>
-            <ul>
-                <p>converse</p>
-                <li>Discord</li>
-                <li>Twitter</li>
-                <li>Facebook</li>
-                <li>MiWeb</li>
-            </ul>
-            <ul class="contact_ul">
-                <p>contact</p>
-                <li>kdrr@gmail.com</li>
-                <li>+47 312 4452914</li>
-                <li>Telegram</li>
-                <li>MyWeb</li>
-            </ul>
+            <h2>Contact <span>Me</span></h2>
+            <div class="contact-wrapper">
+                <div class="c_img">
+                    <img class="c_img" src="./img/fr.jfif" alt="">
+                </div>
+                <div class="c_form">
+                    <h3>Contact me</h3>
+                    <form action="">
+                        <p>
+                            <label for="fullname">FullName</label>
+                            <input type="text" name="fullname" id="fullname">
+                        </p>
+                        <p>
+                            <label for="email">Email Adress</label>
+                            <input type="text" name="email" id="email">
+                        </p>
+                        <p>
+                            <label for="email">Phone (optional)</label>
+                            <input type="tel" name="phone" id="phone">
+                        </p>
+                        <p>
+                            <label for="affair">Affair</label>
+                            <input type="text" name="affair" id="affair">
+                        </p>
+                        <p class="plarge">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="3"></textarea>
+                        </p>
+                        <button type="submit" class="plarge">SEND</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </article>
     <!--Footer-->
