@@ -42,4 +42,72 @@ jQuery('document').ready(function($){
     });
 });
  
+/* ABOUTME */
+jQuery('document').ready(function($){
+    $('#generalBtn').addClass('slcred');
+
+    $('#slc_frontend').hide();
+    $('#slc_backend').hide();
+    $('#slc_design').hide();
+})
+
+jQuery('document').ready(function($){
+    var generalBtn = $('#generalBtn'),
+        frontendBtn = $('#frontendBtn'),
+        backendBtn = $('#backendBtn'),
+        designBtn = $('#designBtn');
+
+    generalBtn.click(function(){
+        $('#slc_general').show();
+
+        $('#slc_frontend').hide();
+        $('#slc_backend').hide();
+        $('#slc_design').hide();
+
+        $('#generalBtn').addClass('slcred');
+
+        $('#frontendBtn').removeClass('slcred');
+        $('#backendBtn').removeClass('slcred');
+        $('#designBtn').removeClass('slcred');
+    })
+    frontendBtn.click(function(){
+        $('#slc_frontend').show();
+
+        $('#slc_general').hide();
+        $('#slc_backend').hide();
+        $('#slc_design').hide();
+
+        $('#frontendBtn').addClass('slcred');
+
+        $('#generalBtn').removeClass('slcred');
+        $('#backendBtn').removeClass('slcred');
+        $('#designBtn').removeClass('slcred');
+    })
+    backendBtn.click(function(){
+        $('#slc_backend').show();
+
+        $('#slc_general').hide();
+        $('#slc_frontend').hide();
+        $('#slc_design').hide();
+
+        $('#backendBtn').addClass('slcred');
+
+        $('#generalBtn').removeClass('slcred');
+        $('#frontendBtn').removeClass('slcred');
+        $('#designBtn').removeClass('slcred');
+    })
+    designBtn.click(function(){
+        $('#slc_design').show();
+
+        $('#slc_general').hide();
+        $('#slc_frontend').hide();
+        $('#slc_backend').hide();
+
+        $('#designBtn').addClass('slcred');
+
+        $('#generalBtn').removeClass('slcred');
+        $('#frontendBtn').removeClass('slcred');
+        $('#backendBtn').removeClass('slcred');
+    })
+})  
 
