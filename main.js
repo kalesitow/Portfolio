@@ -111,3 +111,103 @@ jQuery('document').ready(function($){
     })
 })  
 
+/* CARDS */
+jQuery('document').ready(function($){
+    $('#c_1').addClass('cardred');
+
+    $('#cards2').hide();
+    $('#cards3').hide();
+    $('#cards4').hide();
+    $('#cards5').hide();
+})
+
+jQuery('document').ready(function($){
+    var c1 = $('#c_1'),
+        c2 = $('#c_2'),
+        c3 = $('#c_3'),
+        c4 = $('#c_4');
+        c5 = $('#c_5');
+
+    c1.click(function(){
+        $('#cards').fadeIn();
+
+        $('#cards2').hide();
+        $('#cards3').hide();
+        $('#cards4').hide();
+        $('#cards5').hide();
+
+        $(c1).addClass('cardred');
+
+        $(c2).removeClass('cardred');
+        $(c3).removeClass('cardred');
+        $(c4).removeClass('cardred');
+        $(c5).removeClass('cardred');
+    })
+    c2.click(function(){
+        $('#cards2').fadeIn();
+
+        $('#cards').hide();
+        $('#cards3').hide();
+        $('#cards4').hide();
+        $('#cards5').hide();
+
+        $(c2).addClass('cardred');
+
+        $(c1).removeClass('cardred');
+        $(c3).removeClass('cardred');
+        $(c4).removeClass('cardred');
+        $(c5).removeClass('cardred');
+    })
+    c3.click(function(){
+        $('#cards3').fadeIn();
+
+        $('#cards2').hide();
+        $('#cards').hide();
+        $('#cards4').hide();
+        $('#cards5').hide();
+
+        $(c3).addClass('cardred');
+
+        $(c2).removeClass('cardred');
+        $(c1).removeClass('cardred');
+        $(c4).removeClass('cardred');
+        $(c5).removeClass('cardred');
+    })
+    c4.click(function(){
+        $('#cards4').fadeIn();
+
+        $('#cards2').hide();
+        $('#cards3').hide();
+        $('#cards').hide();
+        $('#cards5').hide();
+
+        $(c4).addClass('cardred');
+
+        $(c2).removeClass('cardred');
+        $(c3).removeClass('cardred');
+        $(c1).removeClass('cardred');
+        $(c5).removeClass('cardred');
+    })
+    c5.click(function(){
+        $('#cards5').fadeIn();
+
+        $('#cards2').hide();
+        $('#cards3').hide();
+        $('#cards4').hide();
+        $('#cards').hide();
+
+        $(c5).addClass('cardred');
+
+        $(c2).removeClass('cardred');
+        $(c3).removeClass('cardred');
+        $(c4).removeClass('cardred');
+        $(c1).removeClass('cardred');
+    })
+})  
+
+/* Contador */
+let numcontainer = document.getElementById('num');
+let value = 0;
+
+
+numcontainer.addEventListener("click", () => {value++;numcontainer.textContent = value});
